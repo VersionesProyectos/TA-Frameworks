@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class BasePage {
+public abstract class BasePage {
 
     protected WebDriver driver;
     protected WebDriverWait wait;
@@ -35,7 +35,7 @@ public class BasePage {
     }
 
     protected void sendText(WebElement element, String text) {
-        wait.until(ExpectedConditions.visibilityOf(element));
+        waitForElementToBeVisible(element);
         element.clear();
         element.sendKeys(text);
     }

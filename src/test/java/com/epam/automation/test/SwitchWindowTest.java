@@ -2,6 +2,7 @@ package com.epam.automation.test;
 
 import com.epam.automation.base.BaseTest;
 import com.epam.automation.pages.SwitchWindowPage;
+import com.epam.automation.utils.Constants;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -27,6 +28,6 @@ public class SwitchWindowTest extends BaseTest {
         switchWindowPage.switchAlert();
         switchWindowPage.clickLogoFormy();
 
-        Assert.assertEquals(switchWindowPage.getMainTitleText(), "Welcome to Formy");
+        Assert.assertEquals(switchWindowPage.getMainTitleText(), Constants.MAIN_TITLE_TEXT);
     }
 }

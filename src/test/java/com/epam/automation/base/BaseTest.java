@@ -2,6 +2,7 @@ package com.epam.automation.base;
 
 import com.beust.jcommander.Parameter;
 import com.epam.automation.utils.Constants;
+import com.epam.automation.utils.TestUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,7 +16,7 @@ import org.testng.annotations.Parameters;
 
 import java.time.Duration;
 
-public class BaseTest {
+public abstract class BaseTest {
 
     protected WebDriver driver;
 
@@ -54,6 +55,7 @@ public class BaseTest {
         if (result.getStatus() == ITestResult.FAILURE) {
             String testName = result.getName();
             System.out.println("Test FAILED: " + testName);
+            TestUtils.takeScreenshot(driver, testName);
         }
         if (driver != null) driver.quit();
     }
