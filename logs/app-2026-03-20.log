@@ -1,0 +1,60 @@
+2026-03-20 09:35:59 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-20 09:35:59 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Iniciando Escenario 1: Registro en el formulario Formy
+2026-03-20 09:35:59 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Navegando al formulario...
+2026-03-20 09:35:59 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando datos personales: Gerardo QA
+2026-03-20 09:36:00 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Configurando cargo: Automation Engineer
+2026-03-20 09:36:01 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Seleccionando preferencias (Educación, Género y Experiencia)
+2026-03-20 09:36:01 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando fecha: 03/16/2026
+2026-03-20 09:36:02 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Enviando formulario...
+2026-03-20 09:36:03 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Mensaje recibido del sistema: The form was successfully submitted!
+2026-03-20 09:36:03 [main] DEBUG com.epam.automation.utils.TestUtils - Preparando captura de pantalla para el test: testCompleteWebForm
+2026-03-20 09:36:03 [main] INFO  com.epam.automation.utils.TestUtils - Evidencia guardada exitosamente. Archivo: testCompleteWebForm_20260320_093603.png
+2026-03-20 21:10:27 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-20 21:10:27 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Iniciando Escenario 1: Registro en el formulario Formy
+2026-03-20 21:10:27 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Navegando al formulario...
+2026-03-20 21:10:27 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando datos personales: Gerardo QA
+2026-03-20 21:10:28 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Configurando cargo: Automation Engineer
+2026-03-20 21:10:29 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Seleccionando preferencias (Educación, Género y Experiencia)
+2026-03-20 21:10:29 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando fecha: 03/16/2026
+2026-03-20 21:10:30 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Enviando formulario...
+2026-03-20 21:10:30 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Mensaje recibido del sistema: The form was successfully submitted!
+2026-03-20 21:27:28 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-20 21:27:28 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Iniciando Escenario 1: Registro en el formulario Formy
+2026-03-20 21:27:28 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Navegando al formulario...
+2026-03-20 21:27:29 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando datos personales: Gerardo QA
+2026-03-20 21:27:29 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Configurando cargo: Automation Engineer
+2026-03-20 21:27:30 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Seleccionando preferencias (Educación, Género y Experiencia)
+2026-03-20 21:27:30 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando fecha: 03/16/2026
+2026-03-20 21:27:31 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Enviando formulario...
+2026-03-20 21:27:31 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Mensaje recibido del sistema: The form was successfully submitted!
+2026-03-20 21:27:31 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Test completado exitosamente: Mensaje de éxito validado.
+2026-03-20 21:36:03 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-20 21:36:03 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Iniciando Escenario 1: Registro en el formulario Formy
+2026-03-20 21:36:03 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Navegando al formulario...
+2026-03-20 21:36:04 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando datos personales: Gerardo QA
+2026-03-20 21:36:05 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Configurando cargo: Automation Engineer
+2026-03-20 21:36:05 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Seleccionando preferencias (Educación, Género y Experiencia)
+2026-03-20 21:36:06 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando fecha: 03/16/2026
+2026-03-20 21:36:06 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Enviando formulario...
+2026-03-20 21:36:07 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Mensaje recibido del sistema: The form was successfully submitted!
+2026-03-20 21:36:07 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Test completado exitosamente: Mensaje de éxito validado.
+2026-03-20 21:37:59 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-20 21:37:59 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Iniciando Escenario 1: Registro en el formulario Formy
+2026-03-20 21:37:59 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Navegando al formulario...
+2026-03-20 21:38:00 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando datos personales: Gerardo QA
+2026-03-20 21:38:00 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Configurando cargo: Automation Engineer
+2026-03-20 21:38:01 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Seleccionando preferencias (Educación, Género y Experiencia)
+2026-03-20 21:38:01 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando fecha: 03/16/2026
+2026-03-20 21:38:02 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Enviando formulario...
+2026-03-20 21:38:02 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Mensaje recibido del sistema: The form was successfully submitted!
+2026-03-20 21:38:02 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Test completado exitosamente: Mensaje de éxito validado.
+2026-03-20 21:49:13 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-20 21:49:13 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Iniciando Escenario 1: Registro en el formulario Formy
+2026-03-20 21:49:13 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Navegando al formulario...
+2026-03-20 21:49:14 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando datos personales: Gerardo QA
+2026-03-20 21:49:15 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Configurando cargo: Automation Engineer
+2026-03-20 21:49:15 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Seleccionando preferencias (Educación, Género y Experiencia)
+2026-03-20 21:49:16 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando fecha: 03/16/2026
+2026-03-20 21:49:17 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Enviando formulario...
+2026-03-20 21:49:17 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Mensaje recibido del sistema: The form was successfully submitted!
+2026-03-20 21:49:17 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Test completado exitosamente: Mensaje de éxito validado.

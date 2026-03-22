@@ -1,6 +1,7 @@
 package com.epam.automation.test;
 
 import com.epam.automation.base.BaseTest;
+import com.epam.automation.model.User;
 import com.epam.automation.pages.CompleteWebFormPage;
 import com.epam.automation.utils.Constants;
 import org.apache.logging.log4j.LogManager;
@@ -20,46 +21,28 @@ public class CompleteWebFormTest extends BaseTest {
         completeWebFormPage = new CompleteWebFormPage(driver);
     }
 
+//
+
     @Test(description = "Scenario 1: Complete the Formy registration form")
     public void testCompleteWebForm() {
+        logger.info("Ejecutando Test de Registro Completo");
 
-        // Uso de INFO para marcar el inicio del escenario
-        logger.info("Iniciando Escenario 1: Registro en el formulario Formy");
+        User testUser = new User(
+                "Gerardo",
+                "QA",
+                "Automation Engineer",
+                "03/16/2026"
+        );
 
-        try {
-            logger.info("Navegando al formulario...");
-            completeWebFormPage.clickLinkForm();
+        completeWebFormPage.clickLinkForm();
 
-            logger.info("Ingresando datos personales: " + Constants.FIRST_NAME + " " + Constants.LAST_NAME);
-            completeWebFormPage.enterFirstName(Constants.FIRST_NAME);
-            completeWebFormPage.enterLastName(Constants.LAST_NAME);
+        // Punto 8: El log ocurre dentro de este método
+        completeWebFormPage.fillForm(testUser);
 
-            logger.debug("Configurando cargo: " + Constants.JOB_TITLE);
-            completeWebFormPage.enterJobTitle(Constants.JOB_TITLE);
+        completeWebFormPage.clickSubmit();
 
-            logger.info("Seleccionando preferencias (Educación, Género y Experiencia)");
-            completeWebFormPage.selectEducationLevel();
-            completeWebFormPage.selectGender();
-            completeWebFormPage.selectExperience();
-
-            logger.info("Ingresando fecha: " + Constants.DATE);
-            completeWebFormPage.enterDate(Constants.DATE);
-
-            logger.info("Enviando formulario...");
-            completeWebFormPage.clickSubmit();
-
-            // Verificación
-            String actualMessage = completeWebFormPage.getAlertText();
-            logger.debug("Mensaje recibido del sistema: " + actualMessage);
-
-            Assert.assertEquals(actualMessage, Constants.SUCCESS_MESSAGE);
-            logger.info("Test completado exitosamente: Mensaje de éxito validado.");
-
-        } catch (Exception e) {
-            // Uso de ERROR si algo falla durante la ejecución de los pasos
-            logger.error("Fallo durante la ejecución del test: " + e.getMessage());
-            throw e; // Re-lanzamos para que TestNG lo marque como fallido y tome la captura
-        }
+        Assert.assertEquals(completeWebFormPage.getAlertText(), Constants.SUCCESS_MESSAGE);
+        logger.info("Test de Registro finalizado con éxito.");
     }
 
 }

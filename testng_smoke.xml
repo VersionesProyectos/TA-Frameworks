@@ -1,0 +1,14 @@
+<suite name="Smoke Suite">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="env" value="prod"/>
+    <test name="Critical Flows">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.epam.automation.test.CompleteWebFormTest"/>
+        </classes>
+    </test>
+</suite>

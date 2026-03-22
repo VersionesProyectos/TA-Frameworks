@@ -1,14 +1,17 @@
 package com.epam.automation.test;
 
 import com.epam.automation.base.BaseTest;
+import com.epam.automation.model.PageState;
 import com.epam.automation.pages.SwitchWindowPage;
 import com.epam.automation.utils.Constants;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class SwitchWindowTest extends BaseTest {
-
+    private static final Logger logger = LogManager.getLogger(SwitchWindowTest.class);
     private SwitchWindowPage switchWindowPage;
 
     @BeforeMethod
@@ -17,17 +20,33 @@ public class SwitchWindowTest extends BaseTest {
     }
 
     @Test(description = "Scenario 2: Window Navigation and Handling")
-    public void NavigationAndWindowHandlingTest() {
+    public void navigationAndWindowHandlingTest() {
+        logger.info("Iniciando Escenario 2: Manejo de Ventanas y Alertas");
 
-        switchWindowPage.clickLogo();
-        switchWindowPage.scrollToAndClickSwitchWindow();
-        switchWindowPage.clickOpenNewTab();
-        switchWindowPage.switchToNewTab();
-        switchWindowPage.switchToMainTab();
-        switchWindowPage.clickOpenAlert();
-        switchWindowPage.switchAlert();
-        switchWindowPage.clickLogoFormy();
+        // Punto 3: Usamos el Model para definir el estado esperado
+        PageState state = new PageState(Constants.MAIN_TITLE_TEXT);
 
-        Assert.assertEquals(switchWindowPage.getMainTitleText(), Constants.MAIN_TITLE_TEXT);
+        try {
+            switchWindowPage.goToSwitchWindowSection();
+
+            // Flujo de Ventanas
+            switchWindowPage.openNewTabAndSwitch();
+            switchWindowPage.closeAndReturnToMain();
+
+            // Flujo de Alertas
+            switchWindowPage.handleAlert();
+
+            // Regreso y Validación
+            switchWindowPage.clickLogoFormy();
+
+            String actualTitle = switchWindowPage.getPageTitle();
+            logger.info("Validando título final. Esperado: " + state.getExpectedTitle());
+
+            Assert.assertEquals(actualTitle, state.getExpectedTitle(), "El título de la página principal es incorrecto.");
+
+        } catch (Exception e) {
+            logger.error("Fallo en el flujo de Switch Window: " + e.getMessage());
+            throw e;
+        }
     }
 }
