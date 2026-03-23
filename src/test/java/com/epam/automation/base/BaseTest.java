@@ -17,6 +17,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.time.Duration;
+
 public abstract class BaseTest {
 
     protected WebDriver driver;
@@ -31,16 +32,11 @@ public abstract class BaseTest {
     @BeforeMethod
     @Parameters({"browser"})
     public void setup(@Optional("chrome") String browser) {
-        logger.info("Iniciando setup del test en: " + browser);
-
-        // Punto 4: Datos dinámicos
         String url = PropertyReader.getProperty("url");
+        logger.info("Iniciando setup del test en: " + browser);
 
         driver = initializeDriver(browser);
         driver.manage().window().maximize();
-
-        // ELIMINAMOS implicitWait para que no choque con WebDriverWait de BasePage
-        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeout));
 
         driver.get(url);
     }
@@ -65,15 +61,13 @@ public abstract class BaseTest {
 
     @AfterMethod
     public void tearDown(ITestResult result) {
-        if (result.getStatus() == ITestResult.FAILURE) {
+        if (ITestResult.FAILURE == result.getStatus()) {
             logger.error("Test FALLIDO: " + result.getName());
-            if (driver != null) {
-                // Captura local (Punto 6)
-                TestUtils.takeScreenshot(driver, result.getName());
-
-                // Adjunto para Allure SIN usar Aspectos (evita el NoSuchMethod)
-                saveScreenshotToAllureManual();
-            }
+            // Usamos tu utilidad manual que NO usa AspectJ
+            TestUtils.saveScreenshotToAllure(driver);
+            TestUtils.takeScreenshot(driver, result.getName());
+        } else {
+            logger.info("Test EXITOSO: " + result.getName());
         }
 
         if (driver != null) {
@@ -82,8 +76,6 @@ public abstract class BaseTest {
         }
     }
 
-    // Eliminamos la anotación @Attachment si sigue dando error,
-// pero primero prueba así:
     public void saveScreenshotToAllureManual() {
         byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
         io.qameta.allure.Allure.addAttachment("Screenshot on Failure", new java.io.ByteArrayInputStream(screenshot));

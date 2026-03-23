@@ -28,6 +28,4 @@ public class User {
     public String getDate() {
         return date;
     }
-
-
 }

@@ -1,7 +1,6 @@
 package com.epam.automation.utils;
 
 import io.qameta.allure.Allure;
-import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -45,23 +44,13 @@ public class TestUtils {
         }
     }
 
-    /**
-     * Adjunta la captura de pantalla directamente al reporte de Allure.
-     * SOLUCIÓN JAVA 24: No usamos @Attachment para evitar errores de AspectJ/aspectOf.
-     */
     public static void saveScreenshotToAllure(WebDriver driver) {
         try {
-            if (driver != null) {
-                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-
-                // Uso de la API fluida de Allure para adjuntar el archivo manualmente
-                Allure.addAttachment("Captura de Pantalla en Fallo",
-                        new ByteArrayInputStream(screenshot));
-
-                logger.info("Captura de pantalla adjuntada a Allure correctamente.");
-            }
+            byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            // Esta línea es la que salva el reporte en Java 24:
+            Allure.addAttachment("Captura de Pantalla", new ByteArrayInputStream(screenshot));
         } catch (Exception e) {
-            logger.error("No se pudo adjuntar la captura a Allure: " + e.getMessage());
+            logger.error("Error al adjuntar a Allure: " + e.getMessage());
         }
     }
 }

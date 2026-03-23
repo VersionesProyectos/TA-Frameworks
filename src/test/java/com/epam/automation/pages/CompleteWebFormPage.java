@@ -82,9 +82,6 @@ public class CompleteWebFormPage extends BasePage {
 
 
     public void fillForm(User user) {
-
-        refreshPageElements();
-
         logger.info("Iniciando el llenado del formulario para el usuario: " + user.getFirstName() + " " + user.getLastName());
 
         // Cada uno de estos métodos internamente ya debería tener un logger.debug

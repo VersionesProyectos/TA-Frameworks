@@ -1,0 +1,396 @@
+2026-03-21 16:56:33 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-21 16:56:33 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Iniciando Escenario 1: Registro en el formulario Formy
+2026-03-21 16:56:33 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Navegando al formulario...
+2026-03-21 16:56:34 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando datos personales: Gerardo QA
+2026-03-21 16:56:35 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Configurando cargo: Automation Engineer
+2026-03-21 16:56:35 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Seleccionando preferencias (Educación, Género y Experiencia)
+2026-03-21 16:56:36 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando fecha: 03/16/2026
+2026-03-21 16:56:36 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Enviando formulario...
+2026-03-21 16:56:36 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Mensaje recibido del sistema: The form was successfully submitted!
+2026-03-21 16:56:36 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Test completado exitosamente: Mensaje de éxito validado.
+2026-03-21 17:01:50 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-21 17:01:50 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Iniciando Escenario 1: Registro en el formulario Formy
+2026-03-21 17:01:50 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Navegando al formulario...
+2026-03-21 17:01:50 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando datos personales: Gerardo QA
+2026-03-21 17:01:51 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Configurando cargo: Automation Engineer
+2026-03-21 17:01:51 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Seleccionando preferencias (Educación, Género y Experiencia)
+2026-03-21 17:01:52 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ingresando fecha: 03/16/2026
+2026-03-21 17:01:53 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Enviando formulario...
+2026-03-21 17:01:53 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Mensaje recibido del sistema: The form was successfully submitted!
+2026-03-21 17:01:53 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Test completado exitosamente: Mensaje de éxito validado.
+2026-03-21 17:30:27 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-21 17:30:28 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ejecutando Test de Registro Completo
+2026-03-21 17:30:28 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Iniciando el llenado del formulario para el usuario: Gerardo QA
+2026-03-21 17:30:29 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Seleccionando opciones de educación, género y experiencia.
+2026-03-21 17:30:30 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Ingresando fecha de registro: 03/16/2026
+2026-03-21 17:30:30 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Formulario completado en la interfaz de usuario.
+2026-03-21 17:30:31 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Test de Registro finalizado con éxito.
+2026-03-21 17:46:31 [main] INFO  com.epam.automation.test.AutocompleteTest - Ejecutando Test de Autocompletado de Dirección
+2026-03-21 17:46:31 [main] INFO  com.epam.automation.pages.AutocompletePage - Navegando a la sección de Autocomplete
+2026-03-21 17:46:31 [main] INFO  com.epam.automation.pages.AutocompletePage - Iniciando el proceso de autocompletado para: 1600 Amphitheatre Parkway, Mountain View, CA
+2026-03-21 17:46:31 [main] DEBUG com.epam.automation.pages.AutocompletePage - Ingresando dirección principal: 1600 Amphitheatre Parkway, Mountain View, CA
+2026-03-21 17:46:32 [main] DEBUG com.epam.automation.pages.AutocompletePage - Ingresando número de calle: 1600
+2026-03-21 17:46:33 [main] DEBUG com.epam.automation.pages.AutocompletePage - Ingresando nombre de calle: Amphitheatre Parkway
+2026-03-21 17:46:33 [main] DEBUG com.epam.automation.pages.AutocompletePage - Ingresando ciudad: Mountain View
+2026-03-21 17:46:34 [main] DEBUG com.epam.automation.pages.AutocompletePage - Ingresando estado: California
+2026-03-21 17:46:34 [main] DEBUG com.epam.automation.pages.AutocompletePage - Ingresando código postal: 94043
+2026-03-21 17:46:34 [main] DEBUG com.epam.automation.pages.AutocompletePage - Ingresando país: United States
+2026-03-21 17:46:34 [main] INFO  com.epam.automation.pages.AutocompletePage - Todos los campos de dirección han sido completados.
+2026-03-21 17:46:34 [main] INFO  com.epam.automation.test.AutocompleteTest - Validación de dirección exitosa.
+2026-03-21 17:46:40 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-21 17:46:40 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ejecutando Test de Registro Completo
+2026-03-21 17:46:40 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Iniciando el llenado del formulario para el usuario: Gerardo QA
+2026-03-21 17:46:42 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Seleccionando opciones de educación, género y experiencia.
+2026-03-21 17:46:42 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Ingresando fecha de registro: 03/16/2026
+2026-03-21 17:46:43 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Formulario completado en la interfaz de usuario.
+2026-03-21 17:46:43 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Test de Registro finalizado con éxito.
+2026-03-21 17:46:47 [main] INFO  com.epam.automation.test.SwitchWindowTest - Iniciando Escenario 2: Manejo de Ventanas y Alertas
+2026-03-21 17:46:47 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Navegando a la sección de Switch Window...
+2026-03-21 17:46:47 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Abriendo nueva pestaña. Ventana original: 772A793729CA3481D5E3169F135CF66A
+2026-03-21 17:46:48 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Cambiado a la nueva ventana: 7F00CED2FBC185EE44D4FA6723461F9D
+2026-03-21 17:46:48 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Cerrando pestaña secundaria y regresando a la principal.
+2026-03-21 17:46:48 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Abriendo y aceptando alerta JS.
+2026-03-21 17:46:48 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Texto de la alerta: This is a test alert!
+2026-03-21 17:46:48 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Regresando al Home mediante el logo de Formy.
+2026-03-21 17:46:48 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Obteniendo título principal de la página.
+2026-03-21 17:46:48 [main] INFO  com.epam.automation.test.SwitchWindowTest - Validando título final. Esperado: Welcome to Formy
+2026-03-21 17:49:45 [main] INFO  com.epam.automation.test.SwitchWindowTest - Iniciando Escenario 2: Manejo de Ventanas y Alertas
+2026-03-21 17:49:45 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Navegando a la sección de Switch Window...
+2026-03-21 17:49:46 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Abriendo nueva pestaña. Ventana original: A387D09C247049EDB9F101A5F1B4CFD0
+2026-03-21 17:49:47 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Cambiado a la nueva ventana: 8F1179C76CE8E8D6172865BA73E72EA9
+2026-03-21 17:49:47 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Cerrando pestaña secundaria y regresando a la principal.
+2026-03-21 17:49:48 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Abriendo y aceptando alerta JS.
+2026-03-21 17:49:48 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Texto de la alerta: This is a test alert!
+2026-03-21 17:49:48 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Regresando al Home mediante el logo de Formy.
+2026-03-21 17:49:48 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Obteniendo título principal de la página.
+2026-03-21 17:49:48 [main] INFO  com.epam.automation.test.SwitchWindowTest - Validando título final. Esperado: Welcome to Formy
+2026-03-21 18:47:27 [main] INFO  com.epam.automation.utils.PropertyReader - Configuración de ambiente 'qa' cargada exitosamente.
+2026-03-21 18:47:27 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en el navegador: chrome
+2026-03-21 18:47:35 [main] INFO  com.epam.automation.test.AutocompleteTest - Ejecutando Test de Autocompletado de Dirección
+2026-03-21 18:47:35 [main] INFO  com.epam.automation.pages.AutocompletePage - Navegando a la sección de Autocomplete
+2026-03-21 18:47:35 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 18:47:36 [main] INFO  com.epam.automation.pages.AutocompletePage - Iniciando el proceso de autocompletado para: 1600 Amphitheatre Parkway, Mountain View, CA
+2026-03-21 18:47:36 [main] DEBUG com.epam.automation.pages.AutocompletePage - Ingresando dirección principal: 1600 Amphitheatre Parkway, Mountain View, CA
+2026-03-21 18:47:36 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: 1600 Amphitheatre Parkway, Mountain View, CA
+2026-03-21 18:47:56 [main] ERROR com.epam.automation.base.BaseTest - Test FALLIDO: autocompleteTest
+2026-03-21 18:47:57 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en el navegador: chrome
+2026-03-21 18:47:59 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-21 18:47:59 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ejecutando Test de Registro Completo
+2026-03-21 18:47:59 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 18:48:00 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Iniciando el llenado del formulario para el usuario: Gerardo QA
+2026-03-21 18:48:00 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: Gerardo
+2026-03-21 18:48:00 [main] ERROR com.epam.automation.base.BaseTest - Test FALLIDO: testCompleteWebForm
+2026-03-21 18:48:00 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en el navegador: chrome
+2026-03-21 18:48:04 [main] INFO  com.epam.automation.test.SwitchWindowTest - Iniciando Escenario 2: Manejo de Ventanas y Alertas
+2026-03-21 18:48:04 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Navegando a la sección de Switch Window...
+2026-03-21 18:48:04 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 18:48:05 [main] DEBUG com.epam.automation.base.BasePage - Haciendo scroll hasta el elemento.
+2026-03-21 18:48:05 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 18:48:06 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Abriendo nueva pestaña. Ventana original: 148FA68DAFC55D20D0240FF95A66CCF1
+2026-03-21 18:48:06 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 18:48:07 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Cambiado a la nueva ventana: CB1B87980D7D84535D4D42E5E8BAE5F0
+2026-03-21 18:48:07 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Cerrando pestaña secundaria y regresando a la principal.
+2026-03-21 18:48:07 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Abriendo y aceptando alerta JS.
+2026-03-21 18:48:07 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 18:48:07 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Texto de la alerta: This is a test alert!
+2026-03-21 18:48:07 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Regresando al Home mediante el logo de Formy.
+2026-03-21 18:48:07 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 18:48:08 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Obteniendo título principal de la página.
+2026-03-21 18:48:08 [main] INFO  com.epam.automation.test.SwitchWindowTest - Validando título final. Esperado: Welcome to Formy
+2026-03-21 18:48:11 [main] INFO  com.epam.automation.base.BaseTest - Browser cerrado correctamente.
+2026-03-21 18:49:14 [main] INFO  com.epam.automation.utils.PropertyReader - Configuración de ambiente 'qa' cargada exitosamente.
+2026-03-21 18:49:14 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en el navegador: chrome
+2026-03-21 18:49:20 [main] INFO  com.epam.automation.test.AutocompleteTest - Ejecutando Test de Autocompletado de Dirección
+2026-03-21 18:49:20 [main] INFO  com.epam.automation.pages.AutocompletePage - Navegando a la sección de Autocomplete
+2026-03-21 18:49:20 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 18:49:21 [main] INFO  com.epam.automation.pages.AutocompletePage - Iniciando el proceso de autocompletado para: 1600 Amphitheatre Parkway, Mountain View, CA
+2026-03-21 18:49:21 [main] DEBUG com.epam.automation.pages.AutocompletePage - Ingresando dirección principal: 1600 Amphitheatre Parkway, Mountain View, CA
+2026-03-21 18:49:21 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: 1600 Amphitheatre Parkway, Mountain View, CA
+2026-03-21 18:49:41 [main] ERROR com.epam.automation.base.BaseTest - Test FALLIDO: autocompleteTest
+2026-03-21 18:49:42 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en el navegador: chrome
+2026-03-21 18:49:44 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-21 18:49:45 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ejecutando Test de Registro Completo
+2026-03-21 18:49:45 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 18:49:45 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Iniciando el llenado del formulario para el usuario: Gerardo QA
+2026-03-21 18:49:45 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: Gerardo
+2026-03-21 18:49:45 [main] ERROR com.epam.automation.base.BaseTest - Test FALLIDO: testCompleteWebForm
+2026-03-21 18:49:45 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en el navegador: chrome
+2026-03-21 18:49:49 [main] INFO  com.epam.automation.test.SwitchWindowTest - Iniciando Escenario 2: Manejo de Ventanas y Alertas
+2026-03-21 18:49:49 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Navegando a la sección de Switch Window...
+2026-03-21 18:49:49 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 18:49:50 [main] DEBUG com.epam.automation.base.BasePage - Haciendo scroll hasta el elemento.
+2026-03-21 18:49:51 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 18:49:51 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Abriendo nueva pestaña. Ventana original: CFB89651C34A6E2CC0F653B0E9D4649C
+2026-03-21 18:49:51 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 18:49:52 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Cambiado a la nueva ventana: DAB8BEE51DFD36700E5B63856D629254
+2026-03-21 18:49:52 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Cerrando pestaña secundaria y regresando a la principal.
+2026-03-21 18:49:52 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Abriendo y aceptando alerta JS.
+2026-03-21 18:49:52 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 18:49:53 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Texto de la alerta: This is a test alert!
+2026-03-21 18:49:53 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Regresando al Home mediante el logo de Formy.
+2026-03-21 18:49:53 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 18:49:53 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Obteniendo título principal de la página.
+2026-03-21 18:49:53 [main] INFO  com.epam.automation.test.SwitchWindowTest - Validando título final. Esperado: Welcome to Formy
+2026-03-21 18:49:55 [main] INFO  com.epam.automation.base.BaseTest - Browser cerrado correctamente.
+2026-03-21 19:00:59 [main] INFO  com.epam.automation.utils.PropertyReader - Configuración de ambiente 'qa' cargada exitosamente.
+2026-03-21 19:00:59 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en el navegador: chrome
+2026-03-21 19:01:05 [main] INFO  com.epam.automation.test.AutocompleteTest - Ejecutando Test de Autocompletado de Dirección
+2026-03-21 19:01:05 [main] INFO  com.epam.automation.pages.AutocompletePage - Navegando a la sección de Autocomplete
+2026-03-21 19:01:05 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:01:05 [main] DEBUG com.epam.automation.base.BasePage - Refrescando referencias de PageFactory para AutocompletePage
+2026-03-21 19:01:05 [main] INFO  com.epam.automation.pages.AutocompletePage - Iniciando el proceso de autocompletado para: 1600 Amphitheatre Parkway, Mountain View, CA
+2026-03-21 19:01:05 [main] DEBUG com.epam.automation.pages.AutocompletePage - Ingresando dirección principal: 1600 Amphitheatre Parkway, Mountain View, CA
+2026-03-21 19:01:05 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: 1600 Amphitheatre Parkway, Mountain View, CA
+2026-03-21 19:01:26 [main] ERROR com.epam.automation.base.BaseTest - Test FALLIDO: autocompleteTest
+2026-03-21 19:01:27 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en el navegador: chrome
+2026-03-21 19:01:31 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-21 19:01:31 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ejecutando Test de Registro Completo
+2026-03-21 19:01:31 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:01:32 [main] DEBUG com.epam.automation.base.BasePage - Refrescando referencias de PageFactory para CompleteWebFormPage
+2026-03-21 19:01:32 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Iniciando el llenado del formulario para el usuario: Gerardo QA
+2026-03-21 19:01:32 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: Gerardo
+2026-03-21 19:01:32 [main] ERROR com.epam.automation.base.BaseTest - Test FALLIDO: testCompleteWebForm
+2026-03-21 19:01:32 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en el navegador: chrome
+2026-03-21 19:01:36 [main] INFO  com.epam.automation.test.SwitchWindowTest - Iniciando Escenario 2: Manejo de Ventanas y Alertas
+2026-03-21 19:01:36 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Navegando a la sección de Switch Window...
+2026-03-21 19:01:36 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:01:36 [main] DEBUG com.epam.automation.base.BasePage - Haciendo scroll hasta el elemento.
+2026-03-21 19:01:37 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:01:38 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Abriendo nueva pestaña. Ventana original: BC7A9249A418497A89E7C0B59B11F79F
+2026-03-21 19:01:38 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:01:38 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Cambiado a la nueva ventana: EB9A2EC6A8EE762EC2C89D9963881A29
+2026-03-21 19:01:38 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Cerrando pestaña secundaria y regresando a la principal.
+2026-03-21 19:01:38 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Abriendo y aceptando alerta JS.
+2026-03-21 19:01:38 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:01:39 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Texto de la alerta: This is a test alert!
+2026-03-21 19:01:39 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Regresando al Home mediante el logo de Formy.
+2026-03-21 19:01:39 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:01:40 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Obteniendo título principal de la página.
+2026-03-21 19:01:40 [main] INFO  com.epam.automation.test.SwitchWindowTest - Validando título final. Esperado: Welcome to Formy
+2026-03-21 19:01:42 [main] INFO  com.epam.automation.base.BaseTest - Browser cerrado correctamente.
+2026-03-21 19:06:59 [main] INFO  com.epam.automation.utils.PropertyReader - Configuración de ambiente 'qa' cargada exitosamente.
+2026-03-21 19:06:59 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en el navegador: chrome
+2026-03-21 19:07:05 [main] INFO  com.epam.automation.test.AutocompleteTest - Ejecutando Test de Autocompletado de Dirección
+2026-03-21 19:07:05 [main] INFO  com.epam.automation.pages.AutocompletePage - Navegando a la sección de Autocomplete
+2026-03-21 19:07:05 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:07:06 [main] DEBUG com.epam.automation.base.BasePage - Refrescando referencias de PageFactory para AutocompletePage
+2026-03-21 19:07:06 [main] INFO  com.epam.automation.pages.AutocompletePage - Iniciando el proceso de autocompletado para: 1600 Amphitheatre Parkway, Mountain View, CA
+2026-03-21 19:07:06 [main] DEBUG com.epam.automation.pages.AutocompletePage - Ingresando dirección principal: 1600 Amphitheatre Parkway, Mountain View, CA
+2026-03-21 19:07:06 [main] DEBUG com.epam.automation.base.BasePage - Haciendo scroll hasta el elemento.
+2026-03-21 19:07:11 [main] ERROR com.epam.automation.base.BaseTest - Test FALLIDO: autocompleteTest
+2026-03-21 19:07:12 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en el navegador: chrome
+2026-03-21 19:07:14 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-21 19:07:14 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ejecutando Test de Registro Completo
+2026-03-21 19:07:14 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:07:15 [main] DEBUG com.epam.automation.base.BasePage - Refrescando referencias de PageFactory para CompleteWebFormPage
+2026-03-21 19:07:15 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Iniciando el llenado del formulario para el usuario: Gerardo QA
+2026-03-21 19:07:15 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: Gerardo
+2026-03-21 19:07:16 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: QA
+2026-03-21 19:07:17 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: Automation Engineer
+2026-03-21 19:07:18 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Seleccionando opciones de educación, género y experiencia.
+2026-03-21 19:07:18 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:07:20 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:07:20 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:07:21 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Ingresando fecha de registro: 03/16/2026
+2026-03-21 19:07:21 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: 03/16/2026
+2026-03-21 19:07:22 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Formulario completado en la interfaz de usuario.
+2026-03-21 19:07:22 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:07:23 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Test de Registro finalizado con éxito.
+2026-03-21 19:07:25 [main] INFO  com.epam.automation.base.BaseTest - Browser cerrado correctamente.
+2026-03-21 19:07:25 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en el navegador: chrome
+2026-03-21 19:07:28 [main] INFO  com.epam.automation.test.SwitchWindowTest - Iniciando Escenario 2: Manejo de Ventanas y Alertas
+2026-03-21 19:07:28 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Navegando a la sección de Switch Window...
+2026-03-21 19:07:28 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:07:28 [main] DEBUG com.epam.automation.base.BasePage - Haciendo scroll hasta el elemento.
+2026-03-21 19:07:29 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:07:30 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Abriendo nueva pestaña. Ventana original: 3FB95BBD51158203DBED216C9B4B5622
+2026-03-21 19:07:30 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:07:30 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Cambiado a la nueva ventana: E6859BF9A3F6BCECFDE457830BCB72D7
+2026-03-21 19:07:30 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Cerrando pestaña secundaria y regresando a la principal.
+2026-03-21 19:07:31 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Abriendo y aceptando alerta JS.
+2026-03-21 19:07:31 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:07:31 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Texto de la alerta: This is a test alert!
+2026-03-21 19:07:31 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Regresando al Home mediante el logo de Formy.
+2026-03-21 19:07:31 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:07:32 [main] DEBUG com.epam.automation.pages.SwitchWindowPage - Obteniendo título principal de la página.
+2026-03-21 19:07:32 [main] INFO  com.epam.automation.test.SwitchWindowTest - Validando título final. Esperado: Welcome to Formy
+2026-03-21 19:07:33 [main] INFO  com.epam.automation.base.BaseTest - Browser cerrado correctamente.
+2026-03-21 19:25:08 [main] INFO  com.epam.automation.utils.PropertyReader - Configuración de ambiente 'qa' cargada exitosamente.
+2026-03-21 19:25:08 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en: chrome
+2026-03-21 19:25:15 [main] INFO  com.epam.automation.test.AutocompleteTest - Ejecutando Test de Autocompletado de Dirección
+2026-03-21 19:25:15 [main] INFO  com.epam.automation.pages.AutocompletePage - Navegando a la sección de Autocomplete
+2026-03-21 19:25:15 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:25:21 [main] ERROR com.epam.automation.base.BaseTest - Test FALLIDO: autocompleteTest
+2026-03-21 19:25:21 [main] DEBUG com.epam.automation.utils.TestUtils - Preparando captura de pantalla para el test: autocompleteTest
+2026-03-21 19:25:21 [main] INFO  com.epam.automation.utils.TestUtils - Evidencia guardada exitosamente. Archivo: autocompleteTest_20260321_192521.png
+2026-03-21 19:25:23 [main] INFO  com.epam.automation.base.BaseTest - Navegador cerrado.
+2026-03-21 19:25:23 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en: chrome
+2026-03-21 19:25:26 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-21 19:25:26 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ejecutando Test de Registro Completo
+2026-03-21 19:25:26 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:25:27 [main] DEBUG com.epam.automation.base.BasePage - Refrescando referencias de PageFactory para CompleteWebFormPage
+2026-03-21 19:25:27 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Iniciando el llenado del formulario para el usuario: Gerardo QA
+2026-03-21 19:25:27 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: Gerardo
+2026-03-21 19:25:27 [main] WARN  com.epam.automation.base.BasePage - No se pudo resaltar el elemento: stale element reference: stale element not found in the current frame
+  (Session info: chrome=146.0.7680.81)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d529a7bdf2ba78ec9601dc229a7ddd3b, executeScript {script=arguments[0].setAttribute('style', 'background: yellow; border: 3px solid red;');, args=[{element-6066-11e4-a52e-4f735466cecf=f.EE5F693A961D2C72D14C764F88EDC728.d.DDFFA77D17AC4CEA052F764EE9CA55A7.e.3}]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.81, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\USUARIO\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63549}, goog:processID: 1292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63549/devtoo..., se:cdpVersion: 146.0.7680.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d529a7bdf2ba78ec9601dc229a7ddd3b
+2026-03-21 19:25:28 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: QA
+2026-03-21 19:25:28 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: Automation Engineer
+2026-03-21 19:25:29 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Seleccionando opciones de educación, género y experiencia.
+2026-03-21 19:25:29 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:25:29 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:25:30 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:25:30 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Ingresando fecha de registro: 03/16/2026
+2026-03-21 19:25:30 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: 03/16/2026
+2026-03-21 19:25:31 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Formulario completado en la interfaz de usuario.
+2026-03-21 19:25:31 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:25:32 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Test de Registro finalizado con éxito.
+2026-03-21 19:25:35 [main] INFO  com.epam.automation.base.BaseTest - Navegador cerrado.
+2026-03-21 19:25:35 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en: chrome
+2026-03-21 19:25:38 [main] INFO  com.epam.automation.test.SwitchWindowTest - Iniciando Escenario 2: Manejo de Ventanas y Alertas
+2026-03-21 19:25:38 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Navegando a la sección de Switch Window...
+2026-03-21 19:25:38 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:25:40 [main] DEBUG com.epam.automation.base.BasePage - Haciendo scroll hasta el elemento.
+2026-03-21 19:25:40 [main] ERROR com.epam.automation.test.SwitchWindowTest - Fallo en el flujo de Switch Window: no such element: Unable to locate element: {"method":"css selector","selector":"a.btn-lg[href='/switch-window']"}
+  (Session info: chrome=146.0.7680.81)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [868c495744ee3c919cac671dac7dcddc, findElement {using=css selector, value=a.btn-lg[href='/switch-window']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.81, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\USUARIO\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63479}, goog:processID: 8788, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63479/devtoo..., se:cdpVersion: 146.0.7680.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 868c495744ee3c919cac671dac7dcddc
+2026-03-21 19:25:40 [main] ERROR com.epam.automation.base.BaseTest - Test FALLIDO: navigationAndWindowHandlingTest
+2026-03-21 19:25:40 [main] DEBUG com.epam.automation.utils.TestUtils - Preparando captura de pantalla para el test: navigationAndWindowHandlingTest
+2026-03-21 19:25:40 [main] INFO  com.epam.automation.utils.TestUtils - Evidencia guardada exitosamente. Archivo: navigationAndWindowHandlingTest_20260321_192540.png
+2026-03-21 19:25:42 [main] INFO  com.epam.automation.base.BaseTest - Navegador cerrado.
+2026-03-21 19:40:41 [main] INFO  com.epam.automation.utils.PropertyReader - Configuración de ambiente 'qa' cargada exitosamente.
+2026-03-21 19:40:41 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en: chrome
+2026-03-21 19:40:46 [main] INFO  com.epam.automation.test.AutocompleteTest - Ejecutando Test de Autocompletado de Dirección
+2026-03-21 19:40:46 [main] INFO  com.epam.automation.pages.AutocompletePage - Navegando a la sección de Autocomplete
+2026-03-21 19:40:46 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:40:53 [main] ERROR com.epam.automation.base.BaseTest - Test FALLIDO: autocompleteTest
+2026-03-21 19:40:53 [main] INFO  com.epam.automation.utils.TestUtils - Evidencia local guardada: autocompleteTest_20260321_194053.png
+2026-03-21 19:40:54 [main] INFO  com.epam.automation.base.BaseTest - Navegador cerrado.
+2026-03-21 19:40:54 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en: chrome
+2026-03-21 19:40:58 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-21 19:40:58 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ejecutando Test de Registro Completo
+2026-03-21 19:40:58 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:40:58 [main] DEBUG com.epam.automation.base.BasePage - Refrescando referencias de PageFactory para CompleteWebFormPage
+2026-03-21 19:40:58 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Iniciando el llenado del formulario para el usuario: Gerardo QA
+2026-03-21 19:40:58 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: Gerardo
+2026-03-21 19:40:59 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: QA
+2026-03-21 19:41:00 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: Automation Engineer
+2026-03-21 19:41:00 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Seleccionando opciones de educación, género y experiencia.
+2026-03-21 19:41:00 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:41:01 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:41:01 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:41:02 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Ingresando fecha de registro: 03/16/2026
+2026-03-21 19:41:02 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: 03/16/2026
+2026-03-21 19:41:03 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Formulario completado en la interfaz de usuario.
+2026-03-21 19:41:03 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:41:04 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Test de Registro finalizado con éxito.
+2026-03-21 19:41:05 [main] INFO  com.epam.automation.base.BaseTest - Navegador cerrado.
+2026-03-21 19:41:05 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en: chrome
+2026-03-21 19:41:09 [main] INFO  com.epam.automation.test.SwitchWindowTest - Iniciando Escenario 2: Manejo de Ventanas y Alertas
+2026-03-21 19:41:09 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Navegando a la sección de Switch Window...
+2026-03-21 19:41:14 [main] ERROR com.epam.automation.test.SwitchWindowTest - Fallo en el flujo de Switch Window: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: a.btn-lg[href='/switch-window']'
+(tried for 5 seconds with 500 milliseconds interval)
+2026-03-21 19:41:14 [main] ERROR com.epam.automation.base.BaseTest - Test FALLIDO: navigationAndWindowHandlingTest
+2026-03-21 19:41:14 [main] INFO  com.epam.automation.utils.TestUtils - Evidencia local guardada: navigationAndWindowHandlingTest_20260321_194114.png
+2026-03-21 19:41:17 [main] INFO  com.epam.automation.base.BaseTest - Navegador cerrado.
+2026-03-21 19:43:31 [main] INFO  com.epam.automation.utils.PropertyReader - Configuración de ambiente 'qa' cargada exitosamente.
+2026-03-21 19:43:31 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en: chrome
+2026-03-21 19:43:36 [main] INFO  com.epam.automation.test.AutocompleteTest - Ejecutando Test de Autocompletado de Dirección
+2026-03-21 19:43:36 [main] INFO  com.epam.automation.pages.AutocompletePage - Navegando a la sección de Autocomplete
+2026-03-21 19:43:36 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:43:53 [main] ERROR com.epam.automation.base.BaseTest - Test FALLIDO: autocompleteTest
+2026-03-21 19:43:53 [main] INFO  com.epam.automation.utils.TestUtils - Evidencia local guardada: autocompleteTest_20260321_194353.png
+2026-03-21 19:43:54 [main] INFO  com.epam.automation.base.BaseTest - Navegador cerrado.
+2026-03-21 19:43:54 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en: chrome
+2026-03-21 19:43:57 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-21 19:43:57 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ejecutando Test de Registro Completo
+2026-03-21 19:43:57 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:43:58 [main] DEBUG com.epam.automation.base.BasePage - Refrescando referencias de PageFactory para CompleteWebFormPage
+2026-03-21 19:43:58 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Iniciando el llenado del formulario para el usuario: Gerardo QA
+2026-03-21 19:43:58 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: Gerardo
+2026-03-21 19:43:58 [main] WARN  com.epam.automation.base.BasePage - No se pudo resaltar el elemento: stale element reference: stale element not found in the current frame
+  (Session info: chrome=146.0.7680.81)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a31eeed6f5517d12ec7e608ca60673ca, executeScript {script=arguments[0].setAttribute('style', 'background: yellow; border: 3px solid red;');, args=[{element-6066-11e4-a52e-4f735466cecf=f.7DCB37829141E931C82FE472BE600C88.d.889A5739A99A3B478DDC8AE67EDC631F.e.3}]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.81, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\USUARIO\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56688}, goog:processID: 10228, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56688/devtoo..., se:cdpVersion: 146.0.7680.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a31eeed6f5517d12ec7e608ca60673ca
+2026-03-21 19:43:58 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: QA
+2026-03-21 19:43:59 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: Automation Engineer
+2026-03-21 19:43:59 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Seleccionando opciones de educación, género y experiencia.
+2026-03-21 19:43:59 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:44:00 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:44:01 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:44:01 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Ingresando fecha de registro: 03/16/2026
+2026-03-21 19:44:01 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: 03/16/2026
+2026-03-21 19:44:02 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Formulario completado en la interfaz de usuario.
+2026-03-21 19:44:02 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:44:03 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Test de Registro finalizado con éxito.
+2026-03-21 19:44:05 [main] INFO  com.epam.automation.base.BaseTest - Navegador cerrado.
+2026-03-21 19:44:05 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en: chrome
+2026-03-21 19:44:09 [main] INFO  com.epam.automation.test.SwitchWindowTest - Iniciando Escenario 2: Manejo de Ventanas y Alertas
+2026-03-21 19:44:09 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Navegando a la sección de Switch Window...
+2026-03-21 19:44:24 [main] ERROR com.epam.automation.test.SwitchWindowTest - Fallo en el flujo de Switch Window: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: a.btn-lg[href='/switch-window']'
+(tried for 15 seconds with 500 milliseconds interval)
+2026-03-21 19:44:24 [main] ERROR com.epam.automation.base.BaseTest - Test FALLIDO: navigationAndWindowHandlingTest
+2026-03-21 19:44:25 [main] INFO  com.epam.automation.utils.TestUtils - Evidencia local guardada: navigationAndWindowHandlingTest_20260321_194424.png
+2026-03-21 19:44:28 [main] INFO  com.epam.automation.base.BaseTest - Navegador cerrado.
+2026-03-21 19:45:14 [main] INFO  com.epam.automation.utils.PropertyReader - Configuración de ambiente 'qa' cargada exitosamente.
+2026-03-21 19:45:14 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en: chrome
+2026-03-21 19:45:19 [main] INFO  com.epam.automation.test.AutocompleteTest - Ejecutando Test de Autocompletado de Dirección
+2026-03-21 19:45:19 [main] INFO  com.epam.automation.pages.AutocompletePage - Navegando a la sección de Autocomplete
+2026-03-21 19:45:19 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:45:35 [main] ERROR com.epam.automation.base.BaseTest - Test FALLIDO: autocompleteTest
+2026-03-21 19:45:35 [main] INFO  com.epam.automation.utils.TestUtils - Evidencia local guardada: autocompleteTest_20260321_194535.png
+2026-03-21 19:45:37 [main] INFO  com.epam.automation.base.BaseTest - Navegador cerrado.
+2026-03-21 19:45:37 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en: chrome
+2026-03-21 19:45:41 [main] DEBUG com.epam.automation.test.CompleteWebFormTest - Inicializando Page Objects para CompleteWebFormTest
+2026-03-21 19:45:41 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Ejecutando Test de Registro Completo
+2026-03-21 19:45:41 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:45:41 [main] DEBUG com.epam.automation.base.BasePage - Refrescando referencias de PageFactory para CompleteWebFormPage
+2026-03-21 19:45:41 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Iniciando el llenado del formulario para el usuario: Gerardo QA
+2026-03-21 19:45:41 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: Gerardo
+2026-03-21 19:45:41 [main] WARN  com.epam.automation.base.BasePage - No se pudo resaltar el elemento: stale element reference: stale element not found in the current frame
+  (Session info: chrome=146.0.7680.81)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bdc1eaa635985a980e4c71cce45a932d, getElementAttribute {id=f.B7EA2F61BC497CD5B8B3061DE69F22B1.d.B343230460E9FE15599DF557BE3ABB8A.e.3, name=style}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.81, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\USUARIO\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50733}, goog:processID: 17560, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50733/devtoo..., se:cdpVersion: 146.0.7680.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bdc1eaa635985a980e4c71cce45a932d)] -> id: first-name]
+Session ID: bdc1eaa635985a980e4c71cce45a932d
+2026-03-21 19:45:42 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: QA
+2026-03-21 19:45:42 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: Automation Engineer
+2026-03-21 19:45:43 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Seleccionando opciones de educación, género y experiencia.
+2026-03-21 19:45:43 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:45:43 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:45:44 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:45:44 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Ingresando fecha de registro: 03/16/2026
+2026-03-21 19:45:44 [main] DEBUG com.epam.automation.base.BasePage - Esperando visibilidad del elemento para enviar texto: 03/16/2026
+2026-03-21 19:45:45 [main] INFO  com.epam.automation.pages.CompleteWebFormPage - Formulario completado en la interfaz de usuario.
+2026-03-21 19:45:45 [main] DEBUG com.epam.automation.base.BasePage - Esperando que el elemento sea clickable para hacer click.
+2026-03-21 19:45:46 [main] INFO  com.epam.automation.test.CompleteWebFormTest - Test de Registro finalizado con éxito.
+2026-03-21 19:45:47 [main] INFO  com.epam.automation.base.BaseTest - Navegador cerrado.
+2026-03-21 19:45:47 [main] INFO  com.epam.automation.base.BaseTest - Iniciando setup del test en: chrome
+2026-03-21 19:45:50 [main] INFO  com.epam.automation.test.SwitchWindowTest - Iniciando Escenario 2: Manejo de Ventanas y Alertas
+2026-03-21 19:45:50 [main] INFO  com.epam.automation.pages.SwitchWindowPage - Navegando a la sección de Switch Window...
+2026-03-21 19:46:06 [main] ERROR com.epam.automation.test.SwitchWindowTest - Fallo en el flujo de Switch Window: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: a.btn-lg[href='/switch-window']'
+(tried for 15 seconds with 500 milliseconds interval)
+2026-03-21 19:46:06 [main] ERROR com.epam.automation.base.BaseTest - Test FALLIDO: navigationAndWindowHandlingTest
+2026-03-21 19:46:06 [main] INFO  com.epam.automation.utils.TestUtils - Evidencia local guardada: navigationAndWindowHandlingTest_20260321_194606.png
+2026-03-21 19:46:08 [main] INFO  com.epam.automation.base.BaseTest - Navegador cerrado.
