@@ -14,8 +14,9 @@
         <maven.compiler.target>24</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <allure.version>2.27.0</allure.version>
-        <suiteXmlFile>testng.xml</suiteXmlFile>
         <aspectj.version>1.9.22.1</aspectj.version>
+        <suiteXmlFile>regression.xml</suiteXmlFile>
+        <groups></groups>
     </properties>
     <dependencies>
         <!-- ✅ Selenium Java (WebDriver principal) -->
@@ -84,6 +85,7 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
                     </suiteXmlFiles>
+                    <groups>${groups}</groups>
                     <testFailureIgnore>false</testFailureIgnore>
                 </configuration>
                 <dependencies>

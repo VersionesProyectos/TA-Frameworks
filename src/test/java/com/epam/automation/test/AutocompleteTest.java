@@ -19,7 +19,9 @@ public class AutocompleteTest extends BaseTest {
         autocompletePage = new AutocompletePage(driver);
     }
 
-    @Test(description = "Scenario 3: Ten‑step Autocomplete procedure")
+    @Test(groups = {"regression"},
+            description = "Scenario 3: Ten‑step Autocomplete procedure")
+
     public void autocompleteTest(){
 
         logger.info("Ejecutando Test de Autocompletado de Dirección");
@@ -35,15 +37,11 @@ public class AutocompleteTest extends BaseTest {
         );
 
         autocompletePage.clickAutocompleteLink();
-
-        // Punto 3 & 8: Acción de alto nivel con logging interno
         autocompletePage.fillAddressDetails(testAddress);
 
-        // Validaciones usando el objeto para comparar
         Assert.assertEquals(autocompletePage.getCityValue(), testAddress.getCity());
         Assert.assertEquals(autocompletePage.getStateValue(), testAddress.getState());
         Assert.assertEquals(autocompletePage.getCountryValue(), testAddress.getCountry());
-
         logger.info("Validación de dirección exitosa.");
     }
 }

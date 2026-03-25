@@ -18,9 +18,6 @@ public class TestUtils {
 
     private static final Logger logger = LogManager.getLogger(TestUtils.class);
 
-    /**
-     * Guarda una captura de pantalla localmente en la carpeta /screenshots
-     */
     public static String takeScreenshot(WebDriver driver, String testName) {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String safeTestName = testName.replaceAll("[^a-zA-Z0-9]", "_");
@@ -38,6 +35,7 @@ public class TestUtils {
 
             logger.info("Evidencia local guardada: " + fileName);
             return filePath;
+
         } catch (IOException e) {
             logger.error("Error al guardar captura local: " + e.getMessage());
             return null;
@@ -46,9 +44,10 @@ public class TestUtils {
 
     public static void saveScreenshotToAllure(WebDriver driver) {
         try {
+
             byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            // Esta línea es la que salva el reporte en Java 24:
             Allure.addAttachment("Captura de Pantalla", new ByteArrayInputStream(screenshot));
+
         } catch (Exception e) {
             logger.error("Error al adjuntar a Allure: " + e.getMessage());
         }

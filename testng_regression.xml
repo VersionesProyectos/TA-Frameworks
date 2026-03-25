@@ -3,7 +3,7 @@
     <parameter name="env" value="qa"/>
     <test name="Full Functional Testing">
         <packages>
-            <package name="com.epam.automation.tests"/>
+            <package name="com.epam.automation.test"/>
         </packages>
     </test>
 </suite>

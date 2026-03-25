@@ -17,7 +17,7 @@ public abstract class BasePage {
 
     protected WebDriver driver;
     protected WebDriverWait wait;
-    // Punto 8: Logger para trazabilidad de bajo nivel
+
     private static final Logger logger = LogManager.getLogger(BasePage.class);
 
     public BasePage(WebDriver driver) {
@@ -26,41 +26,32 @@ public abstract class BasePage {
         }
         this.driver = driver;
 
-        // Punto 4: Leemos el TIMEOUT desde el PropertyReader (ya no de Constants)
         int timeout = Integer.parseInt(PropertyReader.getProperty("timeout"));
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 
         PageFactory.initElements(driver, this);
     }
 
-    // --- EL CORAZÓN DEL BONUS TASK (Highlighting) ---
     protected void highlightElement(WebElement element) {
         try {
             String originalStyle = element.getAttribute("style");
             JavascriptExecutor js = (JavascriptExecutor) driver;
 
-            // Cambiamos el estilo visual temporalmente
             js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 3px solid red;');", element);
 
-            // Pausa de 200ms para que sea visible (Permitido solo para efectos visuales)
             Thread.sleep(200);
 
-            // Restauramos el estilo original
             js.executeScript("arguments[0].setAttribute('style', '" + originalStyle + "');", element);
         } catch (Exception e) {
             logger.warn("No se pudo resaltar el elemento: " + e.getMessage());
         }
     }
 
-    // --- MÉTODOS WRAPPER (Aquí se cumple el requisito del Framework/Wrapper) ---
-
     protected void click(WebElement element) {
         logger.debug("Esperando que el elemento sea clickable para hacer click.");
         wait.until(ExpectedConditions.elementToBeClickable(element));
 
-        // CUMPLIMIENTO DEL BONO: Resalte automático
         highlightElement(element);
-
         element.click();
     }
 
@@ -68,7 +59,6 @@ public abstract class BasePage {
         logger.debug("Esperando visibilidad del elemento para enviar texto: " + text);
         waitForElementToBeVisible(element);
 
-        // CUMPLIMIENTO DEL BONO: Resalte automático
         highlightElement(element);
 
         element.clear();
@@ -80,7 +70,6 @@ public abstract class BasePage {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", element);
 
-        // Resaltamos después del scroll para confirmar visualmente la ubicación
         highlightElement(element);
     }
 

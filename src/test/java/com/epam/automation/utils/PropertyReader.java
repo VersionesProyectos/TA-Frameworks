@@ -8,15 +8,13 @@ import java.io.InputStream;
 import java.util.Properties;
 
 public class PropertyReader {
+
     private static Properties properties;
     private static final Logger logger = LogManager.getLogger(PropertyReader.class);
 
-    /**
-     * Carga el archivo .properties basado en el entorno (Punto 4 y 7)
-     */
     public static void loadProperties(String env) {
+
         properties = new Properties();
-        // Convertimos a minúsculas para evitar errores (qa.properties vs QA.properties)
         String fileName = env.toLowerCase() + ".properties";
 
         try (InputStream input = PropertyReader.class.getClassLoader().getResourceAsStream(fileName)) {
@@ -31,9 +29,6 @@ public class PropertyReader {
         }
     }
 
-    /**
-     * Obtiene un valor del archivo. Si no se ha cargado nada, intenta cargar 'qa' por defecto.
-     */
     public static String getProperty(String key) {
         if (properties == null) {
             logger.warn("Se intentó leer la propiedad '" + key + "' antes de inicializar PropertyReader. Cargando 'qa' por defecto.");

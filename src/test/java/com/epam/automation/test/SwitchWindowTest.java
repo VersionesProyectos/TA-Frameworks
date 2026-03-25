@@ -19,24 +19,20 @@ public class SwitchWindowTest extends BaseTest {
         switchWindowPage = new SwitchWindowPage(driver);
     }
 
-    @Test(description = "Scenario 2: Window Navigation and Handling")
+    @Test(groups = {"regression", "navigation"},
+            description = "Scenario 2: Window Navigation and Handling")
+
     public void navigationAndWindowHandlingTest() {
         logger.info("Iniciando Escenario 2: Manejo de Ventanas y Alertas");
 
-        // Punto 3: Usamos el Model para definir el estado esperado
         PageState state = new PageState(Constants.MAIN_TITLE_TEXT);
 
         try {
             switchWindowPage.goToSwitchWindowSection();
 
-            // Flujo de Ventanas
             switchWindowPage.openNewTabAndSwitch();
             switchWindowPage.closeAndReturnToMain();
-
-            // Flujo de Alertas
             switchWindowPage.handleAlert();
-
-            // Regreso y Validación
             switchWindowPage.clickLogoFormy();
 
             String actualTitle = switchWindowPage.getPageTitle();

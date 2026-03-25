@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class SwitchWindowPage extends BasePage {
+
     private static final Logger logger = LogManager.getLogger(SwitchWindowPage.class);
     private String mainWindowHandle;
 
@@ -27,7 +28,6 @@ public class SwitchWindowPage extends BasePage {
         logger.info("Navegando a la sección de Switch Window...");
         driver.get(PropertyReader.getProperty("url"));
         waitForElementToBeVisible(switchWindowLink);
-        //click(logoHome);
         scrollToElement(switchWindowLink);
         click(switchWindowLink);
     }

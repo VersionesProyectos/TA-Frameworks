@@ -51,10 +51,8 @@ public class AutocompletePage extends BasePage {
 
         logger.info("Iniciando el proceso de autocompletado para: " + address.getFullAddress());
 
-        // El campo principal
         enterAddress(address.getFullAddress());
 
-        // Campos secundarios
         enterStreetAddress(address.getStreet());
         enterStreetAddressDos(address.getStreet2());
         enterCity(address.getCity());
@@ -64,8 +62,6 @@ public class AutocompletePage extends BasePage {
 
         logger.info("Todos los campos de dirección han sido completados.");
     }
-
-    // --- MÉTODOS ATÓMICOS CON LOGGING (Punto 8) ---
 
     public void enterAddress(String address) {
         logger.debug("Ingresando dirección principal: " + address);
@@ -102,8 +98,6 @@ public class AutocompletePage extends BasePage {
         logger.debug("Ingresando país: " + country);
         sendText(countryField, country);
     }
-
-    // --- MÉTODOS DE RETORNO DE VALORES ---
 
     public String getCityValue() { return cityField.getAttribute("value"); }
     public String getStateValue() { return stateField.getAttribute("value"); }

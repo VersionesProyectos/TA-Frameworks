@@ -15,15 +15,15 @@ public class CompleteWebFormTest extends BaseTest {
     private static final Logger logger = LogManager.getLogger(CompleteWebFormTest.class);
     private CompleteWebFormPage completeWebFormPage;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUpPage() {
         logger.debug("Inicializando Page Objects para CompleteWebFormTest");
         completeWebFormPage = new CompleteWebFormPage(driver);
     }
 
-//
+    @Test(groups = {"smoke", "regression"},
+            description = "Scenario 1: Complete the Formy registration form")
 
-    @Test(description = "Scenario 1: Complete the Formy registration form")
     public void testCompleteWebForm() {
         logger.info("Ejecutando Test de Registro Completo");
 
@@ -35,10 +35,7 @@ public class CompleteWebFormTest extends BaseTest {
         );
 
         completeWebFormPage.clickLinkForm();
-
-        // Punto 8: El log ocurre dentro de este método
         completeWebFormPage.fillForm(testUser);
-
         completeWebFormPage.clickSubmit();
 
         Assert.assertEquals(completeWebFormPage.getAlertText(), Constants.SUCCESS_MESSAGE);
