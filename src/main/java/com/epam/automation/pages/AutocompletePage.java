@@ -2,7 +2,6 @@ package com.epam.automation.pages;
 
 import com.epam.automation.base.BasePage;
 import com.epam.automation.model.Address;
-import com.epam.automation.utils.PropertyReader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;

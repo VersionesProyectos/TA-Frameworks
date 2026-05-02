@@ -1,4 +1,7 @@
 <suite name="Smoke Suite">
+    <listeners>
+        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+    </listeners>
     <parameter name="browser" value="chrome"/>
     <parameter name="env" value="prod"/>
     <test name="Critical Flows">

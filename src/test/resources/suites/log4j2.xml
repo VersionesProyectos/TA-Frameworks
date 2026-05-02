@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN">
+<Configuration status="WARN" packages="com.epam.reportportal.log4j2">
     <Properties>
         <Property name="basePath">logs</Property>
     </Properties>
@@ -8,6 +8,10 @@
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
+
+        <ReportPortalLog4j2Appender name="ReportPortalAppender">
+            <PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </ReportPortalLog4j2Appender>
 
         <RollingFile name="DailyFile"
                      fileName="${basePath}/app-test.log"
@@ -20,9 +24,10 @@
     </Appenders>
 
     <Loggers>
-        <Root level="debug"> <AppenderRef ref="Console"/>
+        <Root level="debug">
+            <AppenderRef ref="Console"/>
             <AppenderRef ref="DailyFile"/>
+            <AppenderRef ref="ReportPortalAppender"/>
         </Root>
     </Loggers>
 </Configuration>
-

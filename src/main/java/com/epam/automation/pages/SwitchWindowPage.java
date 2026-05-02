@@ -26,7 +26,7 @@ public class SwitchWindowPage extends BasePage {
 
     public void goToSwitchWindowSection() {
         logger.info("Navegando a la sección de Switch Window...");
-        driver.get(PropertyReader.getProperty("url"));
+        driver.get(System.getProperty("url"));
         waitForElementToBeVisible(switchWindowLink);
         scrollToElement(switchWindowLink);
         click(switchWindowLink);

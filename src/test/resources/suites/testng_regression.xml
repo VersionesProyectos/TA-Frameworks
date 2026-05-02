@@ -1,4 +1,9 @@
 <suite name="Regression Suite">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+    </listeners>
     <parameter name="browser" value="firefox"/>
     <parameter name="env" value="qa"/>
     <test name="Full Functional Testing">

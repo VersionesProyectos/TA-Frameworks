@@ -1,8 +1,6 @@
 package com.epam.automation.base;
 
-import com.beust.jcommander.Parameter;
-import com.epam.automation.utils.Constants;
-import com.epam.automation.utils.PropertyReader;
+
 import com.epam.automation.utils.TestUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
@@ -14,8 +12,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
+import java.io.File;
 import java.time.Duration;
 
 public abstract class BaseTest {
@@ -23,21 +23,17 @@ public abstract class BaseTest {
     protected WebDriver driver;
     private static final Logger logger = LogManager.getLogger(BaseTest.class);
 
-    @BeforeSuite(alwaysRun = true)
-    @Parameters({"env"})
-    public void beforeSuite(@Optional("qa") String env) {
-        PropertyReader.loadProperties(env);
-    }
-
     @BeforeMethod(alwaysRun = true)
-    @Parameters({"browser"})
-    public void setup(@Optional("chrome") String browser) {
-        String url = PropertyReader.getProperty("url");
+    public void setup() {
+        String url = System.getProperty("url");
+        String browser = System.getProperty("browser", "chrome");
+        String envName = System.getProperty("environment");
+        int timeout = Integer.parseInt(System.getProperty("timeout", "10"));
         logger.info("Iniciando setup del test en: " + browser);
-
 
         driver = initializeDriver(browser);
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeout));
         driver.get(url);
     }
 
@@ -59,20 +55,37 @@ public abstract class BaseTest {
         }
     }
 
+//    @AfterMethod(alwaysRun = true)
+//    public void tearDown(ITestResult result) {
+//        if (ITestResult.FAILURE == result.getStatus()) {
+//            logger.error("Test FALLIDO: " + result.getName());
+//
+//            TestUtils.saveScreenshotToAllure(driver);
+//            TestUtils.takeScreenshot(driver, result.getName());
+//            TestUtils.saveScreenshotToReportPortal(driver);
+//        } else {
+//            logger.info("Test EXITOSO: " + result.getName());
+//        }
+//
+//        if (driver != null) {
+//            driver.quit();
+//            logger.info("Navegador cerrado.");
+//        }
+//    }
+
     @AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult result) {
         if (ITestResult.FAILURE == result.getStatus()) {
-            logger.error("Test FALLIDO: " + result.getName());
-
-            TestUtils.saveScreenshotToAllure(driver);
-            TestUtils.takeScreenshot(driver, result.getName());
-        } else {
-            logger.info("Test EXITOSO: " + result.getName());
+            // Llamamos a nuestra nueva utilidad de logging explícito
+            TestUtils.reportScreenshot(driver, "Falla detectada en el test: " + result.getName());
         }
 
         if (driver != null) {
             driver.quit();
-            logger.info("Navegador cerrado.");
         }
+    }
+
+    public WebDriver getDriver() {
+        return this.driver;
     }
 }

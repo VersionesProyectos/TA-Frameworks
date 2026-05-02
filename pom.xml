@@ -9,24 +9,47 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-
-        <maven.compiler.source>24</maven.compiler.source>
-        <maven.compiler.target>24</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <allure.version>2.27.0</allure.version>
         <aspectj.version>1.9.22.1</aspectj.version>
-        <suiteXmlFile>regression.xml</suiteXmlFile>
+        <suiteXmlFile>src/test/resources/suites/testng_regression.xml</suiteXmlFile>
+        <env.url>https://formy-project.herokuapp.com/</env.url>
         <groups></groups>
     </properties>
+
+    <profiles>
+        <profile>
+            <id>qa</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <env.browser>chrome</env.browser>
+                <env.timeout>15</env.timeout>
+                <env.name>QA</env.name>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>prod</id>
+            <properties>
+                <env.browser>firefox</env.browser>
+                <env.timeout>5</env.timeout>
+                <env.name>PROD</env.name>
+            </properties>
+        </profile>
+    </profiles>
+
     <dependencies>
-        <!-- ✅ Selenium Java (WebDriver principal) -->
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.41.0</version> <!-- Última versión estable -->
+            <version>4.25.0</version>
         </dependency>
 
-        <!-- ✅ WebDriverManager (para manejar drivers automáticamente) -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
@@ -60,6 +83,30 @@
             <version>${allure.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version> <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.epam.reportportal</groupId>
+            <artifactId>agent-java-testng</artifactId>
+            <version>5.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.epam.reportportal</groupId>
+            <artifactId>logger-java-log4j</artifactId>
+            <version>5.2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.epam.reportportal</groupId>
+            <artifactId>client-java</artifactId>
+            <version>5.2.6</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -69,8 +116,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
-                    <source>24</source>
-                    <target>24</target>
+                    <source>21</source>
+                    <target>21</target>
                 </configuration>
             </plugin>
 
@@ -79,8 +126,16 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
+                    <systemPropertyVariables>
+                        <url>${env.url}</url>
+                        <browser>${env.browser}</browser>
+                        <timeout>${env.timeout}</timeout>
+                        <environment>${env.name}</environment>
+                        <log4j.configurationFile>src/test/resources/suites/log4j2.xml</log4j.configurationFile>
+                    </systemPropertyVariables>
                     <argLine>
                         -Dfile.encoding=UTF-8
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <suiteXmlFiles>
                         <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>

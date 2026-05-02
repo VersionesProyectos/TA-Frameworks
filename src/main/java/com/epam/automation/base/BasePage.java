@@ -1,7 +1,5 @@
 package com.epam.automation.base;
 
-import com.epam.automation.utils.Constants;
-import com.epam.automation.utils.PropertyReader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
@@ -26,7 +24,7 @@ public abstract class BasePage {
         }
         this.driver = driver;
 
-        int timeout = Integer.parseInt(PropertyReader.getProperty("timeout"));
+        int timeout = Integer.parseInt(System.getProperty("timeout", "10"));
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 
         PageFactory.initElements(driver, this);
