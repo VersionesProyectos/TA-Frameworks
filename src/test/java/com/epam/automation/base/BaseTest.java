@@ -55,24 +55,6 @@ public abstract class BaseTest {
         }
     }
 
-//    @AfterMethod(alwaysRun = true)
-//    public void tearDown(ITestResult result) {
-//        if (ITestResult.FAILURE == result.getStatus()) {
-//            logger.error("Test FALLIDO: " + result.getName());
-//
-//            TestUtils.saveScreenshotToAllure(driver);
-//            TestUtils.takeScreenshot(driver, result.getName());
-//            TestUtils.saveScreenshotToReportPortal(driver);
-//        } else {
-//            logger.info("Test EXITOSO: " + result.getName());
-//        }
-//
-//        if (driver != null) {
-//            driver.quit();
-//            logger.info("Navegador cerrado.");
-//        }
-//    }
-
     @AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult result) {
         if (ITestResult.FAILURE == result.getStatus()) {
