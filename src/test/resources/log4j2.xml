@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration packages="com.epam.reportportal.log4j">
+<Configuration packages="com.epam.reportportal.log4j2">
     <Appenders>
         <ReportPortalLog4j2Appender name="ReportPortalAppender">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>

@@ -1,12 +1,8 @@
 package com.epam.automation.base;
 
-
-import com.epam.automation.utils.TestUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,7 +11,6 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import java.io.File;
 import java.time.Duration;
 
 public abstract class BaseTest {
@@ -25,11 +20,12 @@ public abstract class BaseTest {
 
     @BeforeMethod(alwaysRun = true)
     public void setup() {
-        String url = System.getProperty("url");
+        String url    = System.getProperty("url");
         String browser = System.getProperty("browser", "chrome");
         String envName = System.getProperty("environment");
-        int timeout = Integer.parseInt(System.getProperty("timeout", "10"));
-        logger.info("Iniciando setup del test en: " + browser);
+        int timeout    = Integer.parseInt(System.getProperty("timeout", "10"));
+
+        logger.info("Iniciando setup | browser: " + browser + " | env: " + envName);
 
         driver = initializeDriver(browser);
         driver.manage().window().maximize();
@@ -43,7 +39,6 @@ public abstract class BaseTest {
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--remote-allow-origins=*");
-
                 options.addArguments("--no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
                 return new ChromeDriver(options);
@@ -51,23 +46,27 @@ public abstract class BaseTest {
                 WebDriverManager.firefoxdriver().setup();
                 return new FirefoxDriver();
             default:
-                throw new IllegalArgumentException("Browser not supported: " + browser);
+                throw new IllegalArgumentException("Browser no soportado: " + browser);
         }
     }
 
     @AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult result) {
-        if (ITestResult.FAILURE == result.getStatus()) {
-            // Llamamos a nuestra nueva utilidad de logging explícito
-            TestUtils.reportScreenshot(driver, "Falla detectada en el test: " + result.getName());
+
+        if (result.getStatus() == ITestResult.FAILURE) {
+            logger.error("Test fallido: " + result.getName());
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException ignored) {}
         }
 
         if (driver != null) {
             driver.quit();
+            driver = null;
         }
     }
 
     public WebDriver getDriver() {
-        return this.driver;
+        return driver;
     }
 }

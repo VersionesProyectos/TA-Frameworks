@@ -21,18 +21,11 @@ public class CompleteWebFormTest extends BaseTest {
         completeWebFormPage = new CompleteWebFormPage(driver);
     }
 
-    @Test(groups = {"smoke", "regression"},
-            description = "Scenario 1: Complete the Formy registration form")
-
+    @Test(groups = {"smoke", "regression"}, description = "Scenario 1: Complete the Formy registration form")
     public void testCompleteWebForm() {
         logger.info("Ejecutando Test de Registro Completo");
 
-        User testUser = new User(
-                "Gerardo",
-                "QA",
-                "Automation Engineer",
-                "03/16/2026"
-        );
+        User testUser = new User("Gerardo", "QA", "Automation Engineer", "03/16/2026");
 
         completeWebFormPage.clickLinkForm();
         completeWebFormPage.fillForm(testUser);
@@ -41,7 +34,4 @@ public class CompleteWebFormTest extends BaseTest {
         Assert.assertEquals(completeWebFormPage.getAlertText(), Constants.SUCCESS_MESSAGE);
         logger.info("Test de Registro finalizado con éxito.");
     }
-
 }
-
-
